@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#D32F2F</color>
+    <color name="colorAccent">#536DFE</color>
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#727272</color>
+    <color name="tabColour">#ffffff</color>
+    <color name="dividers">#536DFE</color>
+    <color name="cardView">#FFE0B2</color>
+    <color name="colorHighlight">#B6B6B6</color>
+
+</resources>

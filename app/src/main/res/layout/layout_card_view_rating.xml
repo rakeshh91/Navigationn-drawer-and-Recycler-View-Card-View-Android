@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    card_view:cardCornerRadius="5dp"
+    android:id="@+id/card"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#5c0e9cf4"
+        android:alpha="1">
+
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="4dp"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="4dp"
+            android:src="@mipmap/recycle"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/linearLayout">
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"></LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/vertImage"
+            android:src="@drawable/morevert"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:clickable="true"
+            android:layout_alignBottom="@+id/linearLayout"
+            android:layout_alignRight="@+id/icon"
+            android:layout_alignEnd="@+id/icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harry Potter and Alice in wonderland Part 2"
+            android:id="@+id/movieNameTextView"
+            android:textColor="#070707"
+            android:textStyle="normal|bold|italic"
+            android:textSize="15sp"
+            android:layout_weight="12"
+            android:focusableInTouchMode="false"
+            android:layout_alignBottom="@+id/icon"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible"
+            android:alpha="0.7" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text=" "
+            android:id="@+id/movieNameTextViewBackgound"
+            android:textColor="#070707"
+            android:textStyle="normal|bold"
+            android:textSize="15sp"
+            android:layout_weight="12"
+            android:focusableInTouchMode="false"
+            android:layout_alignBottom="@+id/icon"
+            android:layout_centerHorizontal="true"
+            android:background="#bfbcbc"
+            android:alpha="0.5" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

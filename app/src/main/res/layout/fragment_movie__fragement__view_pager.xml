@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/showMoviesLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="250dp"
+        android:id="@+id/moviesImage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/alice"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" />
+
+    <RelativeLayout
+        android:layout_width="165dp"
+        android:layout_height="250dp"
+        android:layout_alignTop="@+id/moviesImage"
+        android:id="@+id/leftImageLayout"
+        android:layout_toRightOf="@+id/moviesImage"
+        android:layout_toEndOf="@id/moviesImage"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Harry Potter and the Deathly Hallows: Part 2"
+            android:id="@+id/movieName"
+            android:textSize="20sp"
+            android:textStyle="normal|bold"
+            android:textColor="#010101"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="(1977)"
+            android:id="@+id/yearTextView"
+            android:layout_below="@+id/movieName"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            android:textColor="#010101"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="121 min"
+            android:id="@+id/durationTextView"
+            android:layout_below="@+id/yearTextView"
+            android:textColor="#010101"
+            android:textStyle="normal"
+            android:layout_marginTop="5dp"
+            android:textSize="13sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Director: "
+            android:id="@+id/directorTextView"
+            android:layout_below="@+id/durationTextView"
+            android:textSize="13sp"
+            android:textStyle="normal|bold"
+            android:textColor="#060606"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="dfdfsdffsfd"
+            android:id="@+id/directorListTextView"
+            android:layout_below="@+id/directorTextView"
+            android:layout_marginTop="5dp"
+            android:textStyle="normal"
+            android:textSize="13sp"
+            android:textColor="#060606"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Cast :"
+            android:id="@+id/castTextView"
+            android:layout_below="@+id/directorListTextView"
+            android:textStyle="normal|bold"
+            android:textSize="13sp"
+            android:textColor="#050505"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="afafd"
+            android:id="@+id/castListTextView"
+            android:layout_below="@+id/castTextView"
+            android:layout_marginTop="5dp"
+            android:textColor="#040404"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_alignLeft="@+id/moviesImage"
+        android:layout_alignStart="@+id/moviesImage"
+        android:layout_below="@id/moviesImage"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/bottomLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Rating :"
+            android:id="@+id/ratingTextView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:textColor="#040404"
+            android:textStyle="normal|bold"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="9.0"
+            android:id="@+id/movieRatingTextView"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ratingTextView"
+            android:layout_toEndOf="@+id/ratingTextView"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="15sp"
+            android:textColor="#030303"
+            android:textStyle="normal" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBarStars"
+            android:layout_below="@+id/ratingTextView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:rating="4.0"
+            android:isIndicator="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/movieDescriptionTextView"
+            android:layout_below="@+id/ratingBarStars"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:textColor="#050505"
+            android:textStyle="normal"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

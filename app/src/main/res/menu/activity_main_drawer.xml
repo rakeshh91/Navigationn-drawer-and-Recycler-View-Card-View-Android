@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/aboutMe"
+            android:icon="@drawable/test"
+            android:title="About Me" />
+        <item
+            android:id="@+id/task1"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Task 2" />
+        <item
+            android:id="@+id/task2"
+            android:icon="@drawable/task"
+            android:title="Task 3" />
+
+    </group>
+
+</menu>
